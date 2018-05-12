@@ -1,0 +1,292 @@
+﻿﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+a {
+    color: Darkblue;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Advent Pro";
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-image: url(Images/456498.jpg);
+}
+
+.row {
+    Background-color: #c8c8c8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.jumbotron {
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: "Advent Pro";
+    background-image: url(Images/home-banner-6.jpg);
+    Background-size: cover;
+    color: white;
+    text-align: start;
+}
+
+.jumbotron2 {
+    border-radius: 10px;
+    margin-top: 10px;
+    background-image: url();
+    background-size: 25%;
+    Background-size: cover;
+    text-align: center;
+}
+
+.img-thumbnail {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding: 2px;
+    margin-top: 10px;
+    line-height: 1.428571429;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Effect 14: border switch */
+.cl-effect-14 a {
+    padding: 0 20px;
+    height: 45px;
+    line-height: 45px;
+}
+
+    .cl-effect-14 a::before,
+    .cl-effect-14 a::after {
+        position: absolute;
+        width: 45px;
+        height: 2px;
+        background: #666;
+        content: '';
+        opacity: 0.2;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        pointer-events: none;
+    }
+
+    .cl-effect-14 a::before {
+        top: 0;
+        left: 0;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        -o-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+
+    .cl-effect-14 a::after {
+        right: 0;
+        bottom: 0;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 100% 0;
+        -moz-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+        -o-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+    }
+#Video1 {
+    margin: 10px auto;
+    margin-left: 200px;
+}
+    .cl-effect-14 a:hover::before, .cl-effect-14 a:hover::after, .cl-effect-14 a:focus::before, .cl-effect-14 a:focus::after {
+        opacity: 1;
+    }
+
+    .cl-effect-14 a:hover::before,
+    .cl-effect-14 a:focus::before {
+        left: 50%;
+        -webkit-transform: rotate(0deg) translateX(-50%);
+        -moz-transform: rotate(0deg) translateX(-50%);
+        -ms-transform: rotate(0deg) translateX(-50%);
+        -o-transform: rotate(0deg) translateX(-50%);
+        transform: rotate(0deg) translateX(-50%);
+    }
+
+    .cl-effect-14 a:hover::after,
+    .cl-effect-14 a:focus::after {
+        right: 50%;
+        -webkit-transform: rotate(0deg) translateX(50%);
+        -moz-transform: rotate(0deg) translateX(50%);
+        -ms-transform: rotate(0deg) translateX(50%);
+        -o-transform: rotate(0deg) translateX(50%);
+        transform: rotate(0deg) translateX(50%);
+    }
+
+.hero-content {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #eee;
+}
+
+.gallery {
+    margin: 40px 0;
+}
+
+    .gallery .img {
+        position: relative;
+        padding-left: 0;
+        z-index: 4;
+    }
+
+    .gallery img {
+        margin: 0;
+        display: block;
+        transition: all .5s;
+    }
+
+.front {
+    position: relative;
+}
+
+.back {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 230px;
+    height: 230px;
+    background: #ccc;
+    color: #333;
+}
+
+    .back span {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .back .pic_title {
+        background: #fff;
+        padding: 10px;
+    }
+
+    .back .pic_source {
+        position: absolute;
+        left: 10px;
+        bottom: 0;
+    }
+
+.caption {
+    position: absolute;
+    left: 7.043478%;
+    bottom: 80%;
+    color: #fff;
+    display: inline-block;
+    text-shadow: 1px 1px 1px #333;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.btn-learn {
+    position: absolute;
+    color: #fff;
+    right: 10%;
+    bottom: 0;
+    opacity: 0;
+    display: inline-block;
+    transition: all .5s;
+}
+
+/*2D Transition */
+
+.gallery img:hover  {
+	z-index: 1;
+	transform: scale(2.0,2.0);
+	box-shadow: 10px 10px 20px #333;
+}
+
+.gallery .img:hover  {
+	z-index: 5;
+}
+
+.gallery img:hover ~ .btn-learn  {
+	z-index:2;
+	opacity: 1;
+
+}
+
+.gallery img:hover ~ .caption {
+	z-index:2;
+	transform: translate(-30px, -20px);
+}
+
+
+
+/* 3D Transform 
+
+.gallery .img {
+    transition: all .5s;
+    perspective: 1000px;
+}
+
+.gallery .picture {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    transform-style: preserve-3d;
+}
+
+.gallery .front {
+    transform: rotateY(0deg);
+}
+
+.gallery .back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+
+.gallery .img:hover .picture {
+    transform: rotateY(180deg);
+}
+
+.gallery .img:hover .front {
+    backface-visibility: hidden;
+}
+    */
+
